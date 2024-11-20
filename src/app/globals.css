@@ -4,5 +4,19 @@ body{
     padding: 0;
 }
 .hrAfterHeader{
-    width: 80vw;
+    width: 1300px;
+}
+.MainDivHomePage{
+    display: flex;
+    justify-content: center;
+}
+.HomeMainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.HomeMainDiv h3{
+    font-family: "Outfit", serif;
+
 }

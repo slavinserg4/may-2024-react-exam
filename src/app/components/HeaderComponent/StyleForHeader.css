@@ -2,7 +2,7 @@
 .MainDivHeader{
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .Header{
     width: 80vw;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
     height: 40px;
 }
 .divForSelect p{
@@ -63,9 +63,42 @@
     align-items: center;
 
 }
+.formForSearch button{
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .1s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    margin-left: -4px;
+
+}
 .input{
     border: none;
+    margin-left: 10px;
 }
 .input:focus{
     outline: none;
+}
+.Select{
+    width: 150px;
+    border-radius: 20px;
 }

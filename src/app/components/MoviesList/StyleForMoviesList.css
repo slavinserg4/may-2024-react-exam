@@ -1,0 +1,28 @@
+.MainListDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.MainDivCards{
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.CardsOfMovies{
+    border: 1px solid gray;
+    width: 230px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+.CardsOfMovies:hover{
+    width: 245px;
+    height: 335px;
+}
