@@ -6,10 +6,11 @@ type Props = {
     movie:IMovieType
 }
 const MoviesListCard:FC<Props> = ({movie}) => {
+    console.log(movie.poster_path)
     return (
-        <div>
-            <PosterPreview poster={movie.poster_path}/>
-
+        <div className={'Card'}>
+            <PosterPreview poster={movie.poster_path} title={movie.title}/>
+            <p>{movie.title}</p>
         </div>
     );
 };

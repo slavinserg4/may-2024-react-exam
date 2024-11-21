@@ -16,12 +16,15 @@ const MoviesList: FC<IProps> = ({ movies }) => {
             <div className={'MainDivCards'}>
                 {movies.map((movie) => (
                     <div key={movie.id}>
-                        <Link href={'/movieinfo'}>
+                        <Link className={'Link'} href={
+                            {
+                                pathname:'/movieinfo',
+                                query:{movieId:JSON.stringify(movie.id)}
+                            }
+                        }>
                             <div className={'CardsOfMovies'} key={movie.id}><MoviesListCard movie={movie}/></div>
                         </Link>
                     </div>
-
-
                     ))}
             </div>
         </div>

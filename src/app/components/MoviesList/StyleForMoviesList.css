@@ -10,19 +10,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 .CardsOfMovies{
-    border: 1px solid gray;
-    width: 230px;
+    width: 200px;
     height: 320px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     transition: 500ms;
+    margin-bottom: 70px;
+
 }
 .CardsOfMovies:hover{
     width: 245px;
     height: 335px;
+}
+.Link{
+    text-decoration: none;
 }

@@ -18,7 +18,11 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
+    margin-top: 10px;
     margin-bottom: 40px;
+    height: 45px;
+    width: 100px;
+    margin-left: 20px;
 }
 
 .button-62:not([disabled]):focus {

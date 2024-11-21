@@ -41,11 +41,16 @@ export const apiService = {
     searchWithGenres: {
         getAll: async (genreId: number, page: number): Promise<IResponseMovieType & { movies: IMovieType[] }> => {
             const response = await fetch(`https://api.themoviedb.org/3/discover/movie?page=${page}&with_genres=${genreId}`, options);
-
             if (!response.ok) {
                 throw new Error('Не вдалося отримати фільми за жанром');
             }
-
+            const data = await response.json();
+            return data;
+        }
+    }, movieDetails: {
+        getById: async (movieId: number): Promise<IMovieType> => {
+            const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}`, options);
+            if (!response.ok) throw new Error('Не вдалося отримати інформацію про фільм');
             const data = await response.json();
             return data;
         }

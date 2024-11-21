@@ -3,6 +3,7 @@ import './StyleForHeader.css';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { IGenreType } from "@/app/models/IGenreType";
+import Link from "next/link";
 
 interface HeaderProps {
     genres: IGenreType[] | undefined;  // Пропс для жанрів
@@ -33,6 +34,9 @@ const HeaderComponent: React.FC<HeaderProps> = ({ genres }) => {
 
     return (
         <div className="MainDivHeader">
+            <div className={'LinkToMain'}>
+                <Link className={'link'} href={'/'}>All Movies</Link>
+            </div>
             <div className="Header">
                 <div className="divForSelect">
                         <p>Select your genre</p>
@@ -40,7 +44,7 @@ const HeaderComponent: React.FC<HeaderProps> = ({ genres }) => {
                             <option value="">Select Genre</option>
                             {genres?.map((genre) => (
                                 <option key={genre.id} value={genre.id}>
-                                   <div>{genre.name}</div>
+                                   {genre.name}
                                 </option>
                             ))}
                         </select>

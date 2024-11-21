@@ -8,7 +8,6 @@
     width: 80vw;
     height: 70px;
     display: flex;
-    justify-content: space-evenly;
     margin-top: 20px;
 }
 .divForSelect{
@@ -17,16 +16,11 @@
     align-items: center;
     flex-direction: column;
     height: 40px;
+    margin-left: 70px;
 }
 .divForSelect p{
     margin-bottom: 0;
     font-family: "Outfit", serif;
-}
-.withoutButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .divForSelect button{
     width: 70px;
@@ -45,13 +39,6 @@
     height: 30px;
     transition: 500ms;
 }
-#searchGenges{
-    width: 150px;
-    height: 20px;
-    border-radius: 20px;
-    border: 1px solid gray;
-
-}
 .formForSearch{
     margin-top: 17px;
     width: 230px;
@@ -61,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 70px;
 
 }
 .formForSearch button{
@@ -102,3 +90,25 @@
     width: 150px;
     border-radius: 20px;
 }
+.LinkToMain{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit, sans-serif;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    margin-left: 470px;
+    text-align: center;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    transition: 300ms;
+}
+.link:hover{
+    color: gray;
+}
+
+
