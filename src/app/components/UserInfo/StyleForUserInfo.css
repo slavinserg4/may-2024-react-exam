@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.User{
+  display: flex;
+  margin-left: 50px;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  gap: 3px;
+  margin-right: -500px;
+}
+.User div{
+  background-color: orangered;
+  height: 37px;
+  width: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-top: 6px;
+  margin-left: 280px;
+}

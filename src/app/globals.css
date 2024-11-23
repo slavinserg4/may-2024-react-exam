@@ -2,9 +2,11 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #000017;
+    color:white;
 }
 .hrAfterHeader{
-    width: 1300px;
+    width: 1330px;
 }
 .MainDivHomePage{
     display: flex;
@@ -16,7 +18,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.HomeMainDiv h3{
-    font-family: "Outfit", serif;
+.HomeMainDiv p{
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    margin-top: 10px;
 
 }

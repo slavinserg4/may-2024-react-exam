@@ -14,7 +14,7 @@ const HomePage = async ({ searchParams }: Props) => {
 
     return (
         <div className={'HomeMainDiv'}>
-            <h3>All Movies: Choose your favorite</h3>
+            <p>All Movies: Choose your favorite</p>
             <MoviesList movies={data.results} />
 
             <Pagination currentPage={page} queryParams={{}} basePath="/" />

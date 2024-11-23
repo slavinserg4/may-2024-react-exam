@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {FC} from 'react';
+import {IMovieType} from "@/app/models/IMovieType";
+import PosterPreview from "@/app/components/PosterPreview/PosterPreview";
 
-
-const MovieInfo = () => {
+type IProps = {
+    movie:IMovieType
+}
+const MovieInfo:FC<IProps> = ({movie}) => {
     return (
         <div>
-
+            {
+                <PosterPreview poster={movie.poster_path} title={movie.title}/>
+            }
         </div>
     );
 };

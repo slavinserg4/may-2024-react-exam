@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-.Card{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');.Card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +8,9 @@
     transition: 500ms;
 }
 .Card p{
-    font-family: Outfit,sans-serif;
-    margin-top: 5px;
-    color: black;
+    font-family: "Montserrat",sans-serif;
+    margin-top: 3px;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
 }

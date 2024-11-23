@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 import { IGenreType } from "@/app/models/IGenreType";
 import Link from "next/link";
+import UserInfo from "@/app/components/UserInfo/UserInfo";
 
 interface HeaderProps {
     genres: IGenreType[] | undefined;  // Пропс для жанрів
@@ -34,31 +35,32 @@ const HeaderComponent: React.FC<HeaderProps> = ({ genres }) => {
 
     return (
         <div className="MainDivHeader">
-            <div className={'LinkToMain'}>
-                <Link className={'link'} href={'/'}>All Movies</Link>
-            </div>
-            <div className="Header">
-                <div className="divForSelect">
-                        <p>Select your genre</p>
-                        <select name="Genres" id="searchGenres" className={'Select'} onChange={handleGenreChange}>
-                            <option value="">Select Genre</option>
-                            {genres?.map((genre) => (
-                                <option key={genre.id} value={genre.id}>
-                                   {genre.name}
-                                </option>
-                            ))}
-                        </select>
+            <div className={'Header'}>
+                <img className={'NImage'} src="/netflix-logo.png" alt="NetflixLogo"/>
+                <div className={'LinkToMain'}>
+                    <Link className={'link'} href={'/'}>All Movies</Link>
                 </div>
+                    <div className="divForSelect">
+                            <select name="Genres" id="searchGenres" className={'Select'} onChange={handleGenreChange}>
+                                <option value="">Search by genre</option>
+                                {genres?.map((genre) => (
+                                    <option key={genre.id} value={genre.id}>
+                                       {genre.name}
+                                    </option>
+                                ))}
+                            </select>
+                    </div>
+                    <form className="formForSearch" onSubmit={handleSearch}>
+                        <input
+                            className="input"
+                            type="text"
+                            placeholder="Search your interesting..."
+                            name="search"
+                        />
+                        <button type="submit">Submit</button>
+                    </form>
+                    <UserInfo/>
 
-                <form className="formForSearch" onSubmit={handleSearch}>
-                    <input
-                        className="input"
-                        type="text"
-                        placeholder="Search your interesting..."
-                        name="search"
-                    />
-                    <button type="submit">Submit</button>
-                </form>
             </div>
         </div>
     );
