@@ -17,7 +17,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, queryParams, baseP
     };
 
     return (
-        <div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
+        <div className={'ButtonsDiv'}>
     {currentPage > 1 && (
         <Link href={generateLink(prevPage)}>
             <button className={'button-62'}>Prev</button>

@@ -8,7 +8,7 @@ interface Props {
 }
 
 const HomePage = async ({ searchParams }: Props) => {
-    const page = parseInt(searchParams.page || '1', 10); // Сторінка за замовчуванням - 1
+    const page = parseInt(searchParams.page || '1', 10);
 
     const data = await apiService.movieWithPage.getAll(page);
 

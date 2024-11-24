@@ -1,8 +1,4 @@
 .image{
     border-radius: 10px;
     height: 330px;
-    transition: 500ms;
-}
-.image:hover{
-    height: 340px;
 }

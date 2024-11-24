@@ -22,5 +22,21 @@ body{
     font-family: "Montserrat", serif;
     font-size: 20px;
     margin-top: 10px;
-
+}
+.HomeMainDiv h3{
+    font-family: "Montserrat", serif;
+}
+.MainMovieInfoPage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.ButtonBack{
+    color: white;
+}
+.LinkBack{
+    position: absolute;
+    margin-right: 1238px;
+    z-index: 1;
 }

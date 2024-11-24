@@ -3,8 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .MainDivCards{
     width: 1300px;
@@ -22,13 +20,12 @@
     justify-content: center;
     align-items: flex-start;
     transition: 500ms;
-    margin-bottom: 70px;
-
-}
-.CardsOfMovies:hover{
-    width: 245px;
-    height: 335px;
+    margin-bottom: 150px;
 }
 .Link{
     text-decoration: none;
+}
+.CardsOfMovies:hover{
+    width: 210px;
+    height: 330px;
 }

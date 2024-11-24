@@ -1,4 +1,3 @@
-// src/app/movies/search/page.tsx
 import React from 'react';
 import { apiService } from "@/app/services/api.service";
 import MoviesList from "@/app/components/MoviesList/MoviesList";
@@ -10,13 +9,13 @@ interface Props {
 
 const SearchMoviesPage = async ({ searchParams }: Props) => {
     const searchQuery = searchParams.query;
-    const page = parseInt(searchParams.page || '1', 10); // Сторінка за замовчуванням - 1
+    const page = parseInt(searchParams.page || '1', 10);
 
     const data = await apiService.searchMovies.getAll(searchQuery, page);
 
     return (
         <div className={'HomeMainDiv'}>
-            <h3>At your request "{searchQuery}"</h3>
+            <h3>At your request {searchQuery}</h3>
             <MoviesList movies={data.results} />
 
             <Pagination

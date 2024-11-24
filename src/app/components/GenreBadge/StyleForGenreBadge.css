@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.genre-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.genre-badge {
+    font-family: "Montserrat", serif;
+    background-color: #9f3030;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+}

@@ -1,7 +1,5 @@
-'use client';
 import React, { FC } from 'react';
 import './StyleForMoviesList.css';
-
 import { IMovieType } from "@/app/models/IMovieType";
 import Link from "next/link";
 import MoviesListCard from "@/app/components/MoviesListCard/MoviesListCard";

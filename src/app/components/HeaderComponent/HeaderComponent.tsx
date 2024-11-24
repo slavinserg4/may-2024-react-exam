@@ -13,7 +13,6 @@ interface HeaderProps {
 const HeaderComponent: React.FC<HeaderProps> = ({ genres }) => {
     const router = useRouter();
 
-    // Обробка пошуку
     const handleSearch = (event: React.FormEvent) => {
         event.preventDefault();
         const formData = new FormData(event.target as HTMLFormElement);
@@ -24,7 +23,6 @@ const HeaderComponent: React.FC<HeaderProps> = ({ genres }) => {
         }
     };
 
-    // Обробка вибору жанру
     const handleGenreChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const genreId = event.target.value;
 
