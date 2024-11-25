@@ -13,3 +13,7 @@
     font-size: 14px;
     white-space: nowrap;
 }
+.LinkFromBadge{
+    color: white;
+    text-decoration: none;
+}
