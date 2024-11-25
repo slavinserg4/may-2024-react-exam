@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    justify-content: center;
 }
 .genre-badge {
     font-family: "Montserrat", serif;

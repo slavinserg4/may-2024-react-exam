@@ -12,7 +12,7 @@ const MoviesListCard:FC<Props> = ({movie}) => {
         <div className={'Card'}>
             <PosterPreview poster={movie.poster_path} title={movie.title}/>
             <p>{movie.title}</p>
-            <GenreBadge movieID={movie.id}/>
+            <GenreBadge movieID={movie.id} disableLinks={true}/>
         </div>
     );
 };
